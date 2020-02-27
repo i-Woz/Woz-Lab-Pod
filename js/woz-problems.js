@@ -81,6 +81,82 @@ function phoneNumber(arrayInput) {
 console.log(phoneNumber([1,2,3,4,5,6,7,8,9,0]));
 
 
+// Planetary Weight Converter
+// In this challenge, you have to convert a weight weighed on a planet of the Solar System to the corresponding weight on another planet.
+//
+//     To convert the weight, you have to divide it by the gravitational force of the planet on which is weighed and multiply the result (the mass) for the gravitational force of the other planet. See the table below for a list of gravitational forces:
+//
+//     weight on planetA / gravitational force of planetA) * gravitational force of planetB
+//
+// Planet	m/s²
+// Mercury	3.7
+// Venus	8.87
+// Earth	9.81
+// Mars	    3.711
+// Jupiter	24.79
+// Saturn	10.44
+// Uranus	8.69
+// Neptune	11.15
+// Given a weight weighed on planetA, return the converted value for planetB rounded to the nearest hundredth.
+//
+//     Examples
+// spaceWeights("Earth", 1, "Mars") ➞ 0.38
+//
+// spaceWeights("Earth", 1, "Jupiter") ➞ 2.53
+//
+// spaceWeights("Earth", 1, "Neptune") ➞ 1.14
+
+
+var planets = [
+    {
+        name: 'Mercury',
+        force: 3.7
+    },
+    {
+        name: 'Venus',
+        force: 8.87
+    },
+    {
+        name: 'Earth',
+        force: 9.81
+    },
+    {
+        name: 'Mars',
+        force: 3.711
+    },
+    {
+        name: 'Jupiter',
+        force: 24.79
+    },
+    {
+        name: 'Saturn',
+        force: 10.44
+    },
+    {
+        name: 'Uranus',
+        force: 8.69
+    },
+    {
+        name: 'Neptune',
+        force: 11.15
+    },
+    {
+        name: 'Pluto',
+        force: 0.62
+    }
+];
+
+function spaceWeights(planetA, weight, planetB) {
+    // planetA.forEach(function (planet1){
+        // if(this.name === planet1.toUpperCase()){
+            this.name = planetA;
+        // }
+    // });
+    return planetA
+}
+
+console.log(spaceWeights(Earth, 1, Mars));
+
 
 
 
